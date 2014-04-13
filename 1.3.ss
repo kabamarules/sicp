@@ -12,5 +12,5 @@
 
 (define (square x) (* x x))
 
-; (square-sum-larger 3 4 3)
+(square-sum-larger 3 4 3)
 ; => 25
