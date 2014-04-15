@@ -6,4 +6,4 @@
         y))
 
 (test 0 (p))
-; => 0
+; infinite loop
