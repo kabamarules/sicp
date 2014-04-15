@@ -6,4 +6,4 @@
         y))
 
 (test 0 (p))
-; infinite loop
+; the applicative-order evaluation leads to an infinite loop
