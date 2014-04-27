@@ -4,8 +4,9 @@
           (sqrt-iter (improve guess x) x)))
 
 (define (good-enough? guess x)
-  (< (/ (abs (- (square guess) x)) guess) 0.001))
-
+ (< (/ (abs (- (improve guess x) guess)) guess) 0.001))
+; (< (/ (abs (- (square guess) x)) guess)  (* guess 0.001) )) 
+ 
 (define (square x) (* x x))
 
 (define (improve guess x)
@@ -17,7 +18,7 @@
 (define (sqrt x)
   (sqrt-iter 1.0 x))
 
-(sqrt 0.000009)
+(sqrt 0.0009)
 ; => 0.03002766742182557
 ; The result with the previous good-enough? function was
 ; => 0.04030062264654547
