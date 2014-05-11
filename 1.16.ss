@@ -5,7 +5,7 @@
     (cond 
         ((= counter 0) product)
         ((even? counter) (fast-expt-iter (* b b) (/ counter 2) product))
-        (else (* b (fast-expt-iter b (- counter 1) product)))))
+        (else (fast-expt-iter b (- counter 1) (* b product)))))
 
 (fast-expt 2 10)
 ; => 1024
