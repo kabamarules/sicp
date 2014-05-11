@@ -8,5 +8,4 @@
         (else (* b (fast-expt-iter b (- counter 1) product)))))
 
 (fast-expt 2 10)
-
 ; => 1024
