@@ -29,13 +29,18 @@
   
 (fermat-prime? 561)
 ; => #t
+
 ;(fermat-prime? 1105)
 ; => #t
+
 ;(fermat-prime? 1729)
 ; => #t
+
 ;(fermat-prime? 2465)
 ; => #t
+
 ;(fermat-prime? 2821)
 ; => #t
-(fermat-prime? 6601)
+
+;(fermat-prime? 6601)
 ; => #t
